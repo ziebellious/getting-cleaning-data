@@ -7,14 +7,7 @@
 ################################################################################
 
 #-------------------------------------------------------------------------------
-# Set full path to Course Project data.
-#-------------------------------------------------------------------------------
-path <- paste("C:/Users/Rebecca/Documents/Coursera/Getting and Cleaning Data",
-              "Course Project", sep="/"
-)
-
-#-------------------------------------------------------------------------------
-# Call required packages and set working directory.
+# Call required packages.
 #-------------------------------------------------------------------------------
 #install.packages("dplyr")
 #install.packages("tidyr")
@@ -22,7 +15,6 @@ path <- paste("C:/Users/Rebecca/Documents/Coursera/Getting and Cleaning Data",
 library(dplyr)
 library(tidyr)
 library(reshape2)
-setwd(path)
 
 #-------------------------------------------------------------------------------
 # Read in subjects, activities, and feature measurement data for both test and
@@ -120,14 +112,12 @@ avg_mean_std <- test_train %>%
 #-------------------------------------------------------------------------------
 # Write out to flat text file.
 #-------------------------------------------------------------------------------
-if (file.exists(paste(path, "tidy_final.txt", sep="/"))) {
-        file.remove(paste(path, "tidy_final.txt", sep="/"))
+if (file.exists("./tidy_final.txt")) {
+        file.remove("./tidy_final.txt")
         "File removed"
 }
-write.table(avg_mean_std, file=paste(path, "tidy_final.txt", sep="/"),
-            row.names=FALSE
-)
-rm("saf_trans", "test_train", "avg_mean_std", "path")
+write.table(avg_mean_std, file="./tidy_final.txt", row.names=FALSE)
+rm("saf_trans", "test_train", "avg_mean_std")
 
 ################################################################################
 # END OF SCRIPT
