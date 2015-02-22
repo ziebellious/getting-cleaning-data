@@ -28,7 +28,7 @@ The variables are:
     <tr width="100%">
       <td width="15%">Feature</td>
       <td width="15%">factor</td>
-      <td width="70%">Type of feature and associated measurement (either mean or standard deviation). More information available in the README file for the <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">UCI HAR Dataset</a>.</td>
+      <td width="70%">Type of feature and associated measurement (either mean or standard deviation). Additional information available in the features_info.txt file from the <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">UCI HAR Dataset</a>.</td>
     </tr>
     <tr width="100%">
       <td width="15%">AvgMeasurement</td>
