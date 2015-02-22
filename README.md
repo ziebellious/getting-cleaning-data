@@ -1,6 +1,6 @@
 # getting-cleaning-data
-## Coursera's Getting and Cleaning Data Session #011
-### Course Project Repository
+## Getting and Cleaning Data, Coursera Session #011
+## Course Project Repository
 
 This repository contains the script <b>run_analysis.R</b>, which requires as input:
 * access to the dplyr, tidyr, and reshape2 packages; 
