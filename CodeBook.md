@@ -41,8 +41,8 @@ The variables are:
 </table>
 
 ##Creation
-Tidy_final.txt was created in R using the script run_analysis.R, which runs against data from the [UCI HAR Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). The script involves the following steps (which are explained in more detail via comments throughout the script):
-+ Install/call required packages (dplyr, tidyr, reshape2) and set working directory.
+Tidy_final.txt was created in R using the script run_analysis.R, which runs against data from the [UCI HAR Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). These data must be stored in a folder called "UCI HAR Dataset" within the R working directory. The script involves the following steps (which are explained in more detail via comments throughout the script):
++ Call required packages: dplyr, tidyr, and reshape2.
 + Read in subjects, activities, and feature measurement data for both test and training sets (stored in a list).
 + Combine subject, activity, and feature measurement data for both test and training sets.  
 + Read in activity labels and add to combined data described in \#3 above.
